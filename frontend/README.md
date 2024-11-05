@@ -1,46 +1,82 @@
-# Getting Started with Create React App and Redux
+# Goalsetter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+Goalsetter, kullanıcıların hedeflerini belirlemelerine ve yönetmelerine olanak tanıyan basit ve etkili bir uygulamadır. Bu uygulama, MERN (MongoDB, Express, React, Node.js) yığını kullanılarak geliştirilmiştir.
 
-## Available Scripts
+## Özellikler
 
-In the project directory, you can run:
+- **Kullanıcı Kimlik Doğrulama**: JWT ile güvenli giriş ve kayıt işlemleri.
+- **Hedef Yönetimi**: Kullanıcıların hedef ekleyip, görüntüleyip, silmelerine olanak tanır.
+- **Responsive Tasarım**: Mobil ve masaüstü cihazlarla uyumlu kullanıcı arayüzü.
+- **Bildirimler**: React-Toastify ile kullanıcı bildirimleri.
 
-### `npm start`
+## Teknolojiler
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - React
+  - Redux Toolkit
+  - Axios
+  - React Router
+  - React Toastify
 
-### `npm test`
+- **Backend**:
+  - Node.js
+  - Express.js
+  - MongoDB (Mongoose ile)
+  - JWT (JSON Web Tokens)
+  - Bcrypt.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Kurulum
 
-### `npm run build`
+### Ön Gereksinimler
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js ve npm yüklü olmalıdır.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Projeyi Klonlama
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/kullanici_adi/goalsetter-app.git
+cd goalsetter-app
 
-### `npm run eject`
+Backend Kurulumu
+cd backend
+npm install
+npm run server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Frontend Kurulumu
+cd ../frontend
+npm install
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+MONGO_URI=mongodb://localhost:27017/goalsetter
+JWT_SECRET=your_jwt_secret
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Kullanım
+Kullanıcı kaydı yapın.
+Giriş yapın ve hedeflerinizi eklemeye başlayın.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Katkıda Bulunma
+Katkılarınızı bekliyoruz! Aşağıdaki adımları izleyerek projeye katkıda bulunabilirsiniz:
 
-## Learn More
+Forklayın.
+Yeni bir dal oluşturun: git checkout -b feature/YourFeature.
+Değişikliklerinizi yapın ve commit edin: git commit -m 'Add your feature'.
+Dalınızı gönderin: git push origin feature/YourFeature.
+Bir pull isteği oluşturun.
+Lisans
+Bu proje ISC lisansı altında lisanslanmıştır.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Yazarlar
+Anıl Akbay
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Açıklamalar:
+
+1. **Kurulum Bölümü**: Kod blokları düzenlenerek daha net hale getirildi.
+2. **Veritabanı Ayarları**: Çevresel değişkenlerin nasıl ayarlanacağı hakkında daha fazla bilgi eklendi.
+3. **Kullanım ve Katkıda Bulunma**: Bu bölümler netleştirildi ve daha okunaklı hale getirildi.
+4. **Yazarlar Bölümü**: Proje sahibinin adı eklendi.
+
+Bu haliyle `README.md`, kullanıcılar ve katkıda bulunanlar için oldukça bilgilendirici ve profesyonel bir doküman sunmaktadır. İyi çalışmalar!
+
+
+```
